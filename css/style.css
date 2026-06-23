@@ -238,7 +238,7 @@ body.is-menu-open { overflow: hidden; }
 }
 .hero__bg {
   position: absolute; inset: 0;
-  background: url('../img/maxresdefault.jpg') center / cover no-repeat;
+  background: url('../img/hero/maxresdefault.jpg') center / cover no-repeat;
 }
 .hero__overlay {
   position: absolute; inset: 0;
@@ -353,7 +353,7 @@ body.is-menu-open { overflow: hidden; }
   top: 0; right: 0;
   width: 78%;
   height: 60%;
-  background-image: url('../img/サンプル上画角.jpg');
+  background-image: url('../img/concept/sample_01.jpg');
   transform: rotate(2deg);
   z-index: 2;
 }
@@ -361,7 +361,7 @@ body.is-menu-open { overflow: hidden; }
   bottom: 0; left: 0;
   width: 62%;
   height: 48%;
-  background-image: url('../img/パンケーキパッケージサンプル.jpg');
+  background-image: url('../img/concept/sample_02.jpg');
   transform: rotate(-4deg);
   z-index: 1;
 }
@@ -432,7 +432,7 @@ body.is-menu-open { overflow: hidden; }
 .menu-card__image--classic,.menu-page-card__image--classic,
 .menu-card__image--caramel,.menu-page-card__image--caramel,
 .menu-card__image--fruit,  .menu-page-card__image--fruit {
-  background-image: url('../img/cameing soon.jpg');
+  background-image: url('../img/menu/coming_soon.jpg');
 }
 
 /* ============================================================
@@ -677,7 +677,7 @@ body.is-menu-open { overflow: hidden; }
   height: 100px;
   border-radius: 10px;
   margin-bottom: 14px;
-  background: url('../img/cameing soon.jpg') center / cover no-repeat;
+  background: url('../img/menu/coming_soon.jpg') center / cover no-repeat;
 }
 .drink-item__name { font-size: 13.5px; font-weight: 700; line-height: 1.6; margin-bottom: 8px; }
 .drink-item__name small { display: block; font-weight: 400; color: var(--color-text-light); font-size: 11.5px; }
@@ -689,7 +689,7 @@ body.is-menu-open { overflow: hidden; }
 .takeout-section__image {
   height: 320px;
   border-radius: 18px;
-  background: url('../img/cameing soon.jpg') center / cover no-repeat;
+  background: url('../img/menu/cameing soon.jpg') center / cover no-repeat;
   box-shadow: 0 18px 36px rgba(28,93,115,.14);
 }
 .takeout-section__text { color: var(--color-text-light); font-size: 15px; line-height: 2; margin-bottom: 28px; }
@@ -728,7 +728,7 @@ body.is-menu-open { overflow: hidden; }
 .store-item__image {
   border-radius: 10px;
   min-height: 100px;
-  background: url('../img/cameing soon.jpg') center / cover no-repeat;
+  background: url('../img/menu/coming_soon.jpg') center / cover no-repeat;
 }
 .store-item__name { font-size: 17px; font-weight: 700; margin-bottom: 10px; color: var(--color-primary-dark); }
 .store-item__row { display: flex; align-items: center; gap: 8px; font-size: 13.5px; color: var(--color-text-light); margin-bottom: 4px; }
