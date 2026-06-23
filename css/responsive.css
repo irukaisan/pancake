@@ -1,0 +1,167 @@
+/* ============================================================
+   Mini ALOHA Pancake - responsive.css
+   Breakpoints: 1280px (tablet) / 768px (mobile) / 375px (small mobile)
+   ============================================================ */
+
+/* ============================================================
+   1280px - タブレット
+   ============================================================ */
+@media screen and (max-width: 1280px) {
+  .header__inner { padding: 0 24px; gap: 20px; }
+  .header__nav-list { gap: 24px; }
+  .header__cta-btn { padding: 10px 16px; font-size: 12px; }
+
+  .hero__title { font-size: 34px; }
+  .hero__content { max-width: 460px; }
+
+  .concept__inner { gap: 36px; }
+  .concept__title { font-size: 36px; }
+  .concept__gallery { height: 360px; }
+
+  .menu-grid { gap: 20px; }
+  .menu-page-grid { gap: 18px; }
+
+  .commitment__inner { grid-template-columns: 1fr; gap: 40px; }
+  .commitment__list { grid-template-columns: repeat(4, 1fr); gap: 16px; }
+
+  .info-section__inner { grid-template-columns: 1fr; gap: 48px; }
+
+  .menu-page__layout { grid-template-columns: 200px 1fr; gap: 32px; }
+
+  .drink-list { grid-template-columns: repeat(2, 1fr); gap: 18px; }
+  .takeout-section__inner { gap: 36px; }
+
+  .access-page__layout { grid-template-columns: 1fr; gap: 40px; }
+  .access-map { position: relative; top: 0; height: 360px; }
+
+  .contact-page__layout { grid-template-columns: 1fr; gap: 40px; }
+}
+
+/* ============================================================
+   1024px - ナビゲーション切り替え
+   ============================================================ */
+@media screen and (max-width: 1024px) {
+  .header__nav,
+  .header__cta { display: none; }
+  .header__hamburger { display: flex; margin-left: auto; }
+
+  .menu-grid,
+  .menu-page-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* ============================================================
+   768px - モバイル
+   ============================================================ */
+@media screen and (max-width: 768px) {
+  .container,
+  .concept__inner,
+  .menu-grid,
+  .menu-section__head,
+  .commitment__inner,
+  .info-section__inner,
+  .footer__inner,
+  .page-hero__inner,
+  .menu-page__layout,
+  .drink-section__inner,
+  .takeout-section__inner,
+  .access-page__layout,
+  .access-info,
+  .contact-page__layout,
+  .contact-page__lead { padding-left: 20px; padding-right: 20px; }
+
+  .header__inner { height: 76px; padding: 0 20px; }
+  :root { --header-height: 76px; }
+  .header__logo-icon { width: 40px; height: 40px; }
+  .header__logo-img { width: 40px; height: 40px; }
+  .header__logo-main { font-size: 18px; }
+  .header__logo-sub { font-size: 8px; }
+
+  .hero { height: 88vh; min-height: 480px; }
+  .hero__title { font-size: 26px; }
+  .hero__subtitle { font-size: 14px; }
+  .hero__content { left: 6%; right: 6%; bottom: 16%; max-width: none; }
+  .hero__deco { font-size: 32px; }
+  .hero__scroll { display: none; }
+
+  .concept { padding: 64px 0; }
+  .concept__inner { grid-template-columns: 1fr; gap: 32px; }
+  .concept__gallery { height: 300px; order: -1; }
+  .concept__title { font-size: 32px; }
+  .concept__lead { font-size: 20px; }
+
+  .menu-section { padding: 64px 0 72px; }
+  .menu-section__title { font-size: 30px; }
+  .menu-grid { grid-template-columns: repeat(2, 1fr); gap: 16px; }
+  .menu-card__image { height: 130px; }
+
+  /* Slick Slider 初期化時はグリッドを解除してスライド表示に切り替える */
+  .menu-grid--slider.slick-initialized {
+    display: block;
+    padding: 0 8px;
+  }
+  .menu-grid--slider .slick-track { display: flex; }
+  .menu-grid--slider .slick-slide {
+    height: auto;
+    padding: 0 8px;
+  }
+  .menu-grid--slider .slick-slide .menu-card { height: 100%; }
+
+  .commitment { padding: 56px 0; }
+  .commitment__list { grid-template-columns: repeat(2, 1fr); gap: 24px; }
+
+  .info-section { padding: 56px 0; }
+
+  .footer__inner { flex-direction: column; text-align: center; padding: 28px 20px 20px; }
+  .footer__nav ul { justify-content: center; }
+  .footer__copyright { margin: 0 20px; }
+
+  .page-hero { padding: 48px 0 40px; }
+  .page-hero__title { font-size: 38px; }
+
+  .menu-page { padding: 40px 0 64px; }
+  .menu-page__layout { grid-template-columns: 1fr; gap: 24px; }
+  .menu-sidebar__list { display: flex; overflow-x: auto; gap: 8px; padding: 8px; }
+  .menu-sidebar__item { flex-shrink: 0; padding: 12px 16px; font-size: 13.5px; }
+  .menu-page-grid { grid-template-columns: repeat(2, 1fr); gap: 14px; }
+  .menu-panel__title { font-size: 26px; }
+
+  .drink-section { padding: 56px 0; }
+  .drink-list { grid-template-columns: repeat(2, 1fr); gap: 14px; }
+
+  .takeout-section { padding: 56px 0; }
+  .takeout-section__inner { grid-template-columns: 1fr; gap: 28px; }
+  .takeout-section__image { height: 220px; order: -1; }
+
+  .access-page { padding: 40px 0 64px; }
+  .access-page__layout { margin-bottom: 40px; }
+  .store-item { grid-template-columns: 1fr; }
+  .store-item__image { height: 180px; }
+  .access-info { grid-template-columns: 1fr; gap: 16px; }
+  .event-notice { position: static; padding: 24px; }
+
+  .contact-page__lead { padding-top: 28px; font-size: 14px; }
+  .contact-page { padding: 20px 0 72px; }
+  .contact-page__layout { grid-template-columns: 1fr; }
+  .contact-form { padding: 28px; }
+  .faq, .store-contact { padding: 24px; }
+
+  .mobile-nav { width: 84%; }
+}
+
+/* ============================================================
+   375px - 小型スマートフォン
+   ============================================================ */
+@media screen and (max-width: 375px) {
+  .hero__title { font-size: 22px; }
+  .concept__title,
+  .menu-section__title,
+  .page-hero__title { font-size: 26px; }
+
+  .menu-grid,
+  .menu-page-grid,
+  .drink-list,
+  .commitment__list { grid-template-columns: 1fr; }
+
+  .footer__nav ul { flex-direction: column; gap: 12px; }
+
+}

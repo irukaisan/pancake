@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mini ALOHA Pancake - ハワイのアロハを、あなたの日常へ。ハワイの風・香り・思い出を持ち帰れるパンケーキ専門店。">
+  <meta property="og:title" content="Mini ALOHA Pancake | ハワイのアロハを、あなたの日常へ。">
+  <meta property="og:description" content="ハワイの風・香り・思い出を持ち帰れる体験を。Mini ALOHA Pancake。">
+  <meta property="og:type" content="website">
+  <title>Mini ALOHA Pancake | ハワイのアロハを、あなたの日常へ。</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animation.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+<!-- Icon Sprite -->
+<svg style="display:none" aria-hidden="true">
+  <symbol id="icon-shell" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9.25"/><path d="M6 13c1.2-1.6 2.4-1.6 3.6 0s2.4 1.6 3.6 0 2.4-1.6 3.6 0"/><path d="M6 9.5c1.2-1.4 2.4-1.4 3.6 0s2.4 1.4 3.6 0 2.4-1.4 3.6 0"/></symbol>
+  <symbol id="icon-palm" viewBox="0 0 24 24"><path d="M12 21V11"/><path d="M12 11c-2-3-5-3.5-8-2 1 2.5 3.5 3.5 6 3"/><path d="M12 11c2-3 5-3.5 8-2-1 2.5-3.5 3.5-6 3"/><path d="M12 11c-1-2.8-.3-5 1-7"/><path d="M12 11c1-2.8.3-5-1-7"/></symbol>
+  <symbol id="icon-whisk" viewBox="0 0 24 24"><path d="M12 3v9"/><path d="M8 4.5c0 3 2 4 4 4s4-1 4-4"/><path d="M9 12c-1.5 1-2 3-1 5"/><path d="M15 12c1.5 1 2 3 1 5"/><path d="M12 12v9"/></symbol>
+  <symbol id="icon-honey" viewBox="0 0 24 24"><path d="M12 3c2.2 2.6 4 5.4 4 8.2A4 4 0 0 1 8 11.2C8 8.4 9.8 5.6 12 3Z"/><path d="M12 15v6"/><path d="M12 21c1.2 0 2-.8 2-1.8 0-1.2-2-3.2-2-3.2s-2 2-2 3.2c0 1 .8 1.8 2 1.8Z"/></symbol>
+  <symbol id="icon-shield" viewBox="0 0 24 24"><path d="M12 3l7 3v5c0 5-3.5 8-7 10-3.5-2-7-5-7-10V6l7-3Z"/><path d="M9 12l2 2 4-4"/></symbol>
+  <symbol id="icon-cup" viewBox="0 0 24 24"><path d="M5 8h12l-1 8a3 3 0 0 1-3 3H9a3 3 0 0 1-3-3L5 8Z"/><path d="M17 9h1.5a2.5 2.5 0 0 1 0 5H17"/><path d="M9 4c0 1-1 1-1 2"/><path d="M13 4c0 1-1 1-1 2"/></symbol>
+  <symbol id="icon-bag" viewBox="0 0 24 24"><path d="M6 8h12l1 12H5L6 8Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></symbol>
+  <symbol id="icon-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l4 2"/></symbol>
+  <symbol id="icon-pin" viewBox="0 0 24 24"><path d="M12 21s7-6.5 7-12a7 7 0 1 0-14 0c0 5.5 7 12 7 12Z"/><circle cx="12" cy="9" r="2.4"/></symbol>
+  <symbol id="icon-phone" viewBox="0 0 24 24"><path d="M6 4h3l1.5 4-2 1.5a12 12 0 0 0 6 6l1.5-2 4 1.5v3a2 2 0 0 1-2 2C10.5 20 4 13.5 4 6a2 2 0 0 1 2-2Z"/></symbol>
+  <symbol id="icon-map" viewBox="0 0 24 24"><path d="M9 4 4 6v14l5-2 6 2 5-2V4l-5 2-6-2Z"/><path d="M9 4v14"/><path d="M15 6v14"/></symbol>
+  <symbol id="icon-instagram" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17" cy="7" r="1" fill="currentColor" stroke="none"/></symbol>
+  <symbol id="icon-tiktok" viewBox="0 0 24 24"><path d="M14 4v9.5a3.5 3.5 0 1 1-3.5-3.5"/><path d="M14 4c.5 2.5 2.3 4 4.5 4.2"/></symbol>
+</svg>
+
+<!-- Header -->
+<header class="header" id="header">
+  <div class="header__inner">
+    <a href="index.html" class="header__logo">
+      <img src="img/logo.jpg" class="header__logo-img" alt="Mini ALOHA">
+      <span class="header__logo-text">
+        <span class="header__logo-main">Mini<span>ALOHA</span></span>
+        <span class="header__logo-sub">ALOHA TO GO</span>
+      </span>
+    </a>
+    <nav class="header__nav" aria-label="グローバルナビゲーション">
+      <ul class="header__nav-list">
+        <li><a href="index.html"   class="header__nav-link is-active">HOME</a></li>
+        <li><a href="menu.html"    class="header__nav-link">メニュー</a></li>
+        <li><a href="access.html"  class="header__nav-link">出店情報・催事</a></li>
+        <li><a href="contact.html" class="header__nav-link">お問い合わせ</a></li>
+      </ul>
+    </nav>
+    <button type="button" class="header__hamburger" id="hamburger" aria-label="メニューを開く" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div class="mobile-nav__overlay" id="mobileNavOverlay"></div>
+<nav class="mobile-nav" id="mobileNav" aria-label="モバイルナビゲーション">
+  <ul class="mobile-nav__list">
+    <li><a href="index.html"   class="mobile-nav__link">HOME</a></li>
+    <li><a href="menu.html"    class="mobile-nav__link">メニュー</a></li>
+    <li><a href="access.html"  class="mobile-nav__link">出店情報・催事</a></li>
+    <li><a href="contact.html" class="mobile-nav__link">お問い合わせ</a></li>
+  </ul>
+</nav>
+
+<main>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero__bg" aria-hidden="true"></div>
+    <div class="hero__overlay" aria-hidden="true"></div>
+    <div class="hero__content">
+      <h1 class="hero__title">ハワイのアロハを、<br>あなたの日常へ。</h1>
+      <p class="hero__subtitle">ALOHAの香りと、やさしい時間を<br>Mini ALOHA Pancakeで。</p>
+    </div>
+    <a href="#concept" class="hero__scroll" aria-label="スクロールして詳しく見る"><span></span></a>
+  </section>
+
+  <!-- Concept -->
+  <section class="concept" id="concept">
+    <div class="concept__inner">
+      <div class="concept__text" data-aos="fade-up">
+        <p class="concept__label"> ALOHA Company</p>
+        <h2 class="concept__title">Concept</h2>
+        <p class="concept__lead">やさしい時間を、あなたのものへ。</p>
+        <p class="concept__body">Mini ALOHA Pancakeは、ハワイのゆったりとした時間と人々のあたたかさをイメージしてつくられたパンケーキ専門店です。ハワイの風、香り、思い出を持ち帰れる体験を、一枚一枚に込めてお届けします。</p>
+      </div>
+      <div class="concept__gallery" data-aos="fade-up" data-aos-delay="150">
+        <div class="concept__photo concept__photo--01"></div>
+        <div class="concept__photo concept__photo--02"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seasonal Menu -->
+  <section class="menu-section">
+    <div class="menu-section__head" data-aos="fade-up">
+      <p class="menu-section__label">季節限定メニュー</p>
+      <h2 class="menu-section__title">Seasonal Menu</h2>
+    </div>
+    <div class="menu-grid menu-grid--slider" data-aos="fade-up" data-aos-delay="100">
+      <article class="menu-card">
+        <!-- <span class="menu-card__badge">NEW</span> -->
+        <div class="menu-card__image menu-card__image--mango"></div>
+        <div class="menu-card__body">
+          <p class="menu-card__name">ハワイマンゴーパンケーキ</p>
+          <p class="menu-card__price">¥1,480</p>
+        </div>
+      </article>
+      <article class="menu-card">
+        <!-- <span class="menu-card__badge">NEW</span> -->
+        <div class="menu-card__image menu-card__image--berry"></div>
+        <div class="menu-card__body">
+          <p class="menu-card__name">ベリーベリーパンケーキ</p>
+          <p class="menu-card__price">¥1,380</p>
+        </div>
+      </article>
+      <article class="menu-card">
+        <div class="menu-card__image menu-card__image--matcha"></div>
+        <div class="menu-card__body">
+          <p class="menu-card__name">抹茶とあずきのパンケーキ</p>
+          <p class="menu-card__price">¥1,280</p>
+        </div>
+      </article>
+      <article class="menu-card">
+        <div class="menu-card__image menu-card__image--coconut"></div>
+        <div class="menu-card__body">
+          <p class="menu-card__name">ココナッツパイナップルパンケーキ</p>
+          <p class="menu-card__price">¥1,280</p>
+        </div>
+      </article>
+    </div>
+    <div class="menu-section__more" data-aos="fade-up">
+      <a href="menu.html" class="btn btn--outline">すべてのメニューを見る</a>
+    </div>
+  </section>
+
+  <!-- Commitment -->
+  <section class="commitment">
+    <div class="commitment__inner">
+      <div class="commitment__head" data-aos="fade-up">
+        <h2 class="commitment__title">Commitment</h2>
+        <p class="commitment__lead">こだわりの素材と、手作りのやさしさ。</p>
+        <p class="commitment__body">ハワイ厳選の素材を使用し、ひとつひとつ丁寧に手作り。安心・安全、そして美味しさを大切に、Mini ALOHA Pancakeのこだわりをお届けします。</p>
+        <a href="menu.html" class="btn btn--ghost-light">メニューを見る</a>
+      </div>
+      <ul class="commitment__list" data-aos="fade-up" data-aos-delay="150">
+        <li class="commitment__item">
+          <span class="commitment__icon"><svg class="icon"><use href="#icon-palm"></use></svg></span>
+          <p class="commitment__label">ハワイ産素材を使用</p>
+        </li>
+        <li class="commitment__item">
+          <span class="commitment__icon"><svg class="icon"><use href="#icon-whisk"></use></svg></span>
+          <p class="commitment__label">手作りへのこだわり</p>
+        </li>
+        <li class="commitment__item">
+          <span class="commitment__icon"><svg class="icon"><use href="#icon-honey"></use></svg></span>
+          <p class="commitment__label">やさしい甘さのソース</p>
+        </li>
+        <li class="commitment__item">
+          <span class="commitment__icon"><svg class="icon"><use href="#icon-shield"></use></svg></span>
+          <p class="commitment__label">安心・安全の品質管理</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- News & Access -->
+  <section class="info-section">
+    <div class="info-section__inner">
+      <div class="news" data-aos="fade-up">
+        <h2 class="news__title">News <span class="news__title-sub">お知らせ</span></h2>
+        <ul class="news__list">
+          <li class="news__item">
+            <time class="news__date">2025.05.01</time>
+            <span class="news__tag">お知らせ</span>
+            <p class="news__text">季節限定「マンゴーパンケーキ」販売開始のお知らせ</p>
+          </li>
+          <li class="news__item">
+            <time class="news__date">2025.04.18</time>
+            <span class="news__tag">キャンペーン</span>
+            <p class="news__text">母の日限定ギフトボックス予約受付中</p>
+          </li>
+          <li class="news__item">
+            <time class="news__date">2025.04.01</time>
+            <span class="news__tag">新店舗</span>
+            <p class="news__text">新店舗「横浜みなとみらい店」オープン</p>
+          </li>
+        </ul>
+      </div>
+      <div class="access-promo" data-aos="fade-up" data-aos-delay="150">
+        <h2 class="access-promo__title">Access <span class="access-promo__title-sub">出店情報</span></h2>
+        <a href="access.html" class="btn btn--outline">出店情報を見る</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer__inner">
+    <a href="index.html" class="footer__logo">
+      <img src="img/logo.jpg" class="header__logo-img" alt="Mini ALOHA">
+      <span class="header__logo-text">
+        <span class="header__logo-main">Mini<span>ALOHA</span></span>
+        <span class="header__logo-sub">ALOHA TO GO</span>
+      </span>
+    </a>
+    <nav class="footer__nav" aria-label="フッターナビゲーション">
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="menu.html">メニュー</a></li>
+        <li><a href="access.html">出店情報・催事</a></li>
+        <li><a href="contact.html">お問い合わせ</a></li>
+      </ul>
+    </nav>
+    <div class="footer__sns">
+      <a href="#" class="footer__sns-link" aria-label="Instagram"><svg class="icon"><use href="#icon-instagram"></use></svg></a>
+      <a href="#" class="footer__sns-link" aria-label="TikTok"><svg class="icon"><use href="#icon-tiktok"></use></svg></a>
+    </div>
+  </div>
+  <p class="footer__copyright">&copy; Mini ALOHA Pancake All Rights Reserved.</p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/animation.js"></script>
+<script src="js/slider.js"></script>
+</body>
+</html>
